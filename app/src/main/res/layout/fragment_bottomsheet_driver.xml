@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bottmsheet_shape"
+    tools:context=".BottomsheetDriver"
+    android:padding="10dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white"
+    android:padding="5dp"
+   >
+
+    <TextView
+        android:id="@+id/RequestText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Requests Available "
+        android:textColor="@color/darkGrey"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:background="@color/grey"
+        >
+
+
+        <RelativeLayout
+        android:id="@+id/CustomerDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/border"
+            android:visibility="gone"
+
+        >
+
+            <TextView
+        android:id="@+id/customer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/darkGrey"
+        android:text="Patient Name:"
+        android:layout_marginRight="5dp"
+       />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="normal"
+            android:layout_toRightOf="@+id/customer_name"
+            />
+
+    <TextView
+        android:id="@+id/customer_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="mobile:"
+        android:textColor="@color/darkGrey"
+        android:layout_below="@+id/customer_name"
+        android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text=""
+            android:layout_toRightOf="@+id/customer_mobile"
+            android:layout_below="@+id/customer_name"/>
+
+    <TextView
+        android:id="@+id/customer_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patients Loaction:"
+        android:textStyle="bold"
+        android:textColor="@color/darkGrey"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/customer_mobile"/>
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="normal"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/customer_location"
+            android:layout_below="@+id/customer_mobile"
+
+           />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/accept_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="Accept"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:background="@drawable/border2"
+        android:drawableStart="@drawable/baseline_check_circle_24"
+        android:textAlignment="textStart"
+        android:drawablePadding="5dp"
+        android:paddingLeft="145dp"
+       />
+    <Button
+        android:id="@+id/CallPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center|bottom"
+        android:gravity="center"
+        android:text="Call Patient "
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:background="@drawable/border2"
+        android:drawableEnd="@drawable/phone"
+       />
+    <Button
+        android:id="@+id/RideComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center|bottom"
+        android:gravity="center"
+        android:text="Reach at Hospital"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="@color/redColor"
+        android:visibility="gone"
+        android:background="@drawable/border"
+        android:drawableEnd="@drawable/hospital_ic"
+
+        />
+
+    <Button
+        android:id="@+id/reject_button"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reject"
+        android:textColor="@color/redColor"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/baseline_cancel"
+       android:textAlignment="textStart"
+        android:drawablePadding="5dp"
+      android:paddingLeft="145dp"
+        />
+
+
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="com.example.ambulanceapp.permission.C2D_MESSAGE" />
+
+    <permission
+        android:name="com.example.ambulanceapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AmbulanceApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".HelpPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivityDriver2"
+            android:exported="false" />
+        <activity
+            android:name=".HospitalsActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".AboutPage2"
+            android:exported="false" />
+        <activity
+            android:name=".Profile2"
+            android:exported="false" />
+        <activity
+            android:name=".AboutPage"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="false"
+            tools:replace="android:exported">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".UserLogin"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBwVoOLlp4qco3m7zIfGMQO7IvIwnC3Zh0" />
+
+        <activity
+            android:name=".UserMapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_user_maps"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".DriverMapsActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:exported="false"
+            android:label="@string/title_activity_driver_maps"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".DriverLoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".user_driver"
+            android:exported="true" />
+        <activity
+            android:name=".FlashScreen"
+            android:exported="true"
+            android:icon="@drawable/img_1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

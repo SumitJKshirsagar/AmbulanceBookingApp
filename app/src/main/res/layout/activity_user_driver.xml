@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:layout_gravity="center">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+
+    android:gravity="center">
+    <Button
+        android:id="@+id/userButton"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/baseline_person_2_24"
+        android:drawablePadding="10dp"
+        android:gravity="left|center"
+        android:paddingLeft="60dp"
+        android:background="@drawable/border2"
+        android:text="Patient"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+       />
+
+    <Button
+        android:id="@+id/driverButton"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userButton"
+       android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/baseline_directions_car"
+        android:drawablePadding="10dp"
+        android:gravity="left|center"
+        android:paddingLeft="70dp"
+        android:text="Driver"
+        android:textColor="@color/redColor"
+        android:layout_centerHorizontal="true"
+
+
+         />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_below="@id/driverButton"
+        android:textColor="@color/white"
+        android:text="By continuing you agree that you have read and accept our terms and conditions privacy policy"
+        android:textSize="17sp" />
+</RelativeLayout>
+</RelativeLayout>

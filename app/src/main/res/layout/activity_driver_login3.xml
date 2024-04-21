@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/registrationPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+       android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="Register"
+        android:textColor="@color/darkGrey"
+
+      />
+
+
+    <TextView
+        android:id="@+id/textDriver"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter Your Details"
+        android:textColor="@color/darkGrey"
+        android:textSize="20dp"
+        android:gravity="left|center"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/registrationPage"
+       />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etFullName2"
+        app:helperTextEnabled="true"
+        app:helperText="Enter FullName"
+        android:layout_below="@id/textDriver"
+        app:helperTextTextColor="@color/redColor"
+        app:boxBackgroundMode="outline"
+        >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etDriverFullName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:gravity="left|center"
+        android:hint="Full Name*"
+        android:textColor="@color/darkGrey"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:drawableStart="@drawable/baseline_person_2_244"
+        android:drawablePadding="10dp"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMobileNo"
+        android:layout_below="@id/etFullName2"
+        app:helperTextEnabled="true"
+        app:helperText="Enter Mobile Number*"
+        app:helperTextTextColor="@color/redColor"
+        app:boxBackgroundMode="outline"
+        >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etDriverMobile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:textColor="@color/darkGrey"
+        android:paddingLeft="20dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="15dp"
+        android:drawableStart="@drawable/baseline_smartphone"
+       />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/CVT"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/etMobileNo"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Choose Vehicle type*"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/baseline_directions_car_24"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/darkGrey" />
+
+    <Spinner
+        android:id="@+id/spinnerVehicleType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/CVT"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:textColor="@color/darkGrey"
+      android:entries="@array/vehicle_types"
+       />
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/etEmailAddress2"
+    android:layout_below="@id/spinnerVehicleType"
+    app:helperTextEnabled="true"
+    app:helperText="Enter Email Address*"
+    app:helperTextTextColor="@color/redColor"
+    app:boxBackgroundMode="outline"
+    >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/darkGrey"
+        android:background="@drawable/border"
+        android:hint="Email ID"
+        android:drawableStart="@drawable/baseline_mail_24"
+        android:drawablePadding="10dp"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+      android:id="@+id/PasswordIn"
+        android:layout_height="wrap_content"
+
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/black"
+        app:counterEnabled="true"
+        app:helperTextEnabled="true"
+        app:helperText="Enter Password*"
+        app:helperTextTextColor="@color/redColor"
+        app:boxBackgroundMode="outline"
+        app:counterMaxLength="20"
+        android:layout_below="@id/etEmailAddress2">
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/PasswordEt"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/darkGrey"
+            android:background="@drawable/border"
+            android:hint="Password"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:focusable="true"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnDriverContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/PasswordIn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border2"
+        android:padding="8dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDriverContinue"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+<TextView
+    android:id="@+id/alreadyRegisterTxt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Already have an account?"
+    android:textColor="@color/darkGrey"
+    android:textSize="17sp" />
+    <TextView
+        android:id="@+id/TxtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="@color/blue"
+        android:textSize="17sp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/alreadyRegisterTxt"
+
+        />
+    </LinearLayout>
+</RelativeLayout>

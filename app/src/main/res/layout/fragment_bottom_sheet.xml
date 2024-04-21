@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottmsheet_shape"
+    android:padding="10dp"
+    >
+
+<RelativeLayout
+    android:id="@+id/StatusBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:layout_marginTop="10dp"
+   >
+
+    <ImageView
+        android:id="@+id/StatusImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/hospital_ic" />
+    <TextView
+        android:id="@+id/statusBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Ambulance..."
+        android:padding="10dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/darkGrey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+       />
+
+
+</RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StatusBarLayout"
+        android:background="@color/grey">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="150dp"
+            android:visibility="gone"
+            android:progressTint="@color/redColor"/>
+
+        <ImageView
+            android:id="@+id/driverImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/am2"
+            android:visibility="invisible"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="driver"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/driverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sumit Kshirsagar"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/driverNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/driverName"
+            android:text="9370958150"
+            android:textColor="@color/darkGrey"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/driverLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tathwade,Pune 411033"
+            android:layout_marginTop="10dp"
+            android:lines="3"
+            android:textColor="@color/darkGrey"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details"
+        android:background="@color/grey">
+
+
+        <ImageButton
+            android:id="@+id/callButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="Call Driver"
+            android:src="@drawable/baseline_phone_enabled_24"
+            android:background="@drawable/curveshape"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/redColor"
+            android:background="@color/Transparent_color2"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:drawableEnd="@drawable/baseline_cancel"/>
+        <ImageButton
+            android:id="@+id/showLocationButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Show Location"
+            android:background="@color/Transparent_color2"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/baseline_share_location_24"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/requestButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:background="@drawable/border2"
+            android:text="Request"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:elevation="20dp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

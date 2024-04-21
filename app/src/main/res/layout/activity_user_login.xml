@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        tools:layout_editor_absoluteX="-5dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/imageView3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center|left"
+        android:text="Enter your details"
+        android:textColor="@color/darkGrey"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/textView2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        android:hint=" First Name*"
+        android:drawableStart="@drawable/baseline_person_2_244"
+        android:drawablePadding="10dp"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="@color/darkGrey" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/editTextText"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        android:hint="Last Name*"
+        android:drawableStart="@drawable/baseline_person_2_244"
+        android:drawablePadding="10dp"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="@color/darkGrey" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextText2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border2"
+        android:padding="8dp"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+        android:textSize="17dp" />
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="profile_image"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_user" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Logo"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Welcome"
+        android:textColor="@color/darkGrey"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/LoginPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:text="Log In"
+        android:textColor="@color/darkGrey"
+
+        />
+
+
+    <TextView
+        android:id="@+id/textDriver"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="100dp"
+        android:text="Login with Email"
+        android:textColor="@color/darkGrey"
+        android:textSize="20dp"
+        android:gravity="left|center"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/LoginPage"
+        />
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/Email"
+    app:helperText="Enter Registered Email"
+    app:helperTextTextColor="@color/redColor"
+    app:boxBackgroundMode="outline"
+    android:layout_below="@id/textDriver">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etEmailAddress2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/darkGrey"
+        android:background="@drawable/border"
+        android:hint="Email ID*"
+        android:drawableStart="@drawable/baseline_mail_24"
+        android:drawablePadding="10dp"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PasswordT2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Email"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/black"
+        app:helperText="Enter Password*"
+        app:boxBackgroundMode="outline"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/redColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/PasswordEt2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColor="@color/darkGrey"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnDriverLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/PasswordT2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border2"
+        android:padding="8dp"
+        android:text="Log In"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDriverLogin"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:id="@+id/alreadyRegisterTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="@color/darkGrey"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/alreadyRegisterTxt"
+
+            />
+    </LinearLayout>
+</RelativeLayout>

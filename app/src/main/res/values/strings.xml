@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">AmbulanceApp</string>
+    <string name="otp_verification">OTP verification</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="we_will_send_an_otp_to_this_given_number">We will send an otp to this given number</string>
+    <string name="title_activity_driver_login">DriverLoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_driver_maps">DriverMapsActivity</string>
+    <string name="title_activity_user_maps">UserMapsActivity</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="nav_header_description">Driver name</string>
+    <string name="nav_header_title">Driver name</string>
+    <string name="google_maps_key">AIzaSyBwVoOLlp4qco3m7zIfGMQO7IvIwnC3Zh0</string>
+    <string name="logout">Logout\n</string>
+
+
+    <string name="firebase_functions_base_url" templateMergeStrategy="preserve" translatable="false">https://firebase_functions_base_url/</string>
+    <string name="publishablekey" templateMergeStrategy="preserve" translatable="false">stripe_pk_key</string>
+    <string name="stripe_client_key" templateMergeStrategy="preserve" translatable="false">stripe_sk_key</string>
+    <string name="firebase_hosting_url" templateMergeStrategy="preserve" translatable="false">https://firebase_hosting_url/</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="channel_name">notification</string>
+    <string name="channel_description">"For booking "</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
